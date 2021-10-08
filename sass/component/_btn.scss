@@ -1,0 +1,40 @@
+.btn:link {
+    &:link {
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 30px;
+        text-transform: uppercase;
+        transition: all .1s;
+    }
+    &:hover {
+        transform: translateY(-3%);
+        box-shadow: 0 12px 15px rgba(119, 119, 119, 0.349);
+    }
+}
+
+.textbox .btn-1 {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    color: #777;
+    font-size: 16px;
+    animation-name: MovetoTop;
+    animation-duration: 1.3s;
+}
+
+.btn-txt {
+    &:link,
+    &:visited {
+        font-size: 14px;
+        display: inline-block;
+        color: $color-primary;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary;
+        padding: 3px;
+        transition: all .2s;
+    }
+    &:hover {
+        background-color: $color-primary;
+        color: $color-base;
+        box-shadow: 0 1rem 2rem;
+    }
+}

@@ -1,0 +1,10 @@
+        @mixin animation {
+            animation-duration: 1.3s;
+            animation-timing-function: ease-in;
+        }
+        
+        @mixin clearfix {
+            content: "";
+            display: table;
+            clear: both;
+        }

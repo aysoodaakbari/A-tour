@@ -1,0 +1,45 @@
+.heading-primary .h-submain {
+    display: block;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 17.5px;
+}
+
+.heading-primary .h-main {
+    font-size: 60px;
+    font-weight: 600;
+    letter-spacing: 40px;
+}
+
+.heading-secondery {
+    font-size: 35px;
+    display: inline-block;
+    text-transform: uppercase;
+    //margin-top: -100px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, $color-sec, $color-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .1s;
+    &:hover {
+        transform: skewY(10deg) skewX(5deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba( #1b1a1a, .2);
+    }
+}
+
+.heading-tertiary {
+    font-size: 16px;
+    color: $color-head;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.paraghraph {
+    font-size: 14px;
+    color: #1b1a1a;
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

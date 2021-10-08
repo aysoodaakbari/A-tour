@@ -1,0 +1,14 @@
+{
+    "name": "a-tour",
+    "version": "1.0.0",
+    "description": "Landing-page",
+    "main": "index.js",
+    "scripts": {
+        "compile:sass": "node-sass sass/main.scss style.css -w"
+    },
+    "author": "Aysooda",
+    "license": "ISC",
+    "devDependencies": {
+        "node-sass": "^6.0.1"
+    }
+}
