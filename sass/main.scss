@@ -85,7 +85,12 @@
 .features {
     background-image: linear-gradient( to right bottom, rgba($color-sec, 0.8), rgba($color-dark, 0.8)), url(img/pexels-pixabay-158398.jpg);
     background-size: cover;
-    padding: 25rem 0;
+    padding: 13rem 0;
+    margin-top: -20rem;
+    transform: skewY(-7deg);
+    &>* {
+        transform: skewY(7deg);
+    }
 }
 
 .featurs-box {

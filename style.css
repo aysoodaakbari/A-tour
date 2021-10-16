@@ -224,7 +224,11 @@ body {
 .features {
   background-image: linear-gradient(to right bottom, rgba(14, 66, 105, 0.8), rgba(82, 171, 152, 0.8)), url(img/pexels-pixabay-158398.jpg);
   background-size: cover;
-  padding: 25rem 0; }
+  padding: 13rem 0;
+  margin-top: -20rem;
+  transform: skewY(-7deg); }
+  .features > * {
+    transform: skewY(7deg); }
 
 .featurs-box {
   background-color: rgba(242, 242, 242, 0.8);
