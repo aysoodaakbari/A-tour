@@ -8,6 +8,36 @@
     <title>A-tour</title>
 </head>
 
+<script>
+    document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+        t.style.left = n.clientX + "px",
+            t.style.top = n.clientY + "px",
+            e.style.left = n.clientX + "px",
+            e.style.top = n.clientY + "px",
+            i.style.left = n.clientX + "px",
+            i.style.top = n.clientY + "px"
+    });
+    var t = document.getElementById("cursor"),
+        e = document.getElementById("cursor2"),
+        i = document.getElementById("cursor3");
+
+    function n(t) {
+        e.classList.add("hover", "hover-2"), i.classList.add("hover", "hover-2")
+    }
+
+    function s(t) {
+        e.classList.remove("hover", "hover-2"), i.classList.remove("hover", "hover-2")
+    }
+    s();
+    for (var r = document.querySelectorAll(".hover-target, .hover-target-2"), a = r.length - 1; a >= 0; a--) {
+        o(r[a])
+    }
+
+    function o(t) {
+        t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+    }
+</script>
+
 <body>
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
@@ -20,11 +50,11 @@
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>About Natous</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benfits</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
+                <li class="navigation__item"><a href="# " class="navigation__link hover-target"><span>01</span>About Natous</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link hover-target"><span>02</span>Your benfits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link hover-target"><span>03</span>Popular tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link hover-target"><span>04</span>Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link hover-target"><span>05</span>Book now</a></li>
             </ul>
         </nav>
     </div>
@@ -40,7 +70,7 @@
                 <span class="h-submain">Lorem ipsum dolor elit</span>
 
             </h1>
-            <a class="btn btn-1" href="">Clike to discover</a>
+            <a class="btn btn-1 hover-target" href="">Clike to discover</a>
         </div>
 
     </header>
